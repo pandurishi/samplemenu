@@ -1,81 +1,108 @@
- body {
-    font-family: Arial, sans-serif;
-}
-
-header {
-    background-image: url('bg.png');
-    padding: 15px 0;
-    text-align: center;
-    background-repeat: no-repeat;
-    background-size: 1500px 700px;
-}
-
-nav ul {
-    list-style-type: none;
+ /* General Reset and Base Styles */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
 nav ul li {
-    display: inline;
+    display: inline-block;
     margin: 0 10px;
 }
 
 nav ul li a {
+    color: #fff;
     text-decoration: none;
-    color: #333;
+    font-size: 18px;
 }
 
+/* Search Container Styles */
 .search-container {
-    margin-top: 20px;
+    margin-top: 10px;
+    text-align: center;
 }
 
-.search-container input, .search-container select {
-    padding: 5px;
+.search-container input[type="text"],
+.search-container select {
+    padding: 8px;
     font-size: 16px;
+    margin-right: 10px;
+    width: 60%;
+    max-width: 250px;
+}
+
+/* Main Content (Tables) Styles */
+.table-container {
+    padding: 20px;
 }
 
 .data-table {
     width: 100%;
-    border-collapse: collapse;
     margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-x: auto; /* Enable horizontal scroll on smaller screens */
 }
 
 .data-table caption {
     font-size: 1.5em;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .data-table th, .data-table td {
     border: 1px solid #ddd;
-    padding: 1px;
+    padding: 8px;
     text-align: left;
     vertical-align: top;
 }
 
-#mainheading {
-    color: red;
-    font-size: 30px;
-}
-
-#resto {
-    color: rgb(255, 145, 0);
-    font-size: 150px;
-}
-
 .data-table td {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    position: relative; /* Ensure images and text are positioned correctly */
 }
 
 .data-table td img {
-    flex: 0 0 50%;  /* Ensures the image takes up exactly 50% of the cell's width */
+    max-width: 100%;
     height: auto;
-    margin-right: 20px; /* Space between image and text */
+    display: block;
+    margin-bottom: 10px;
 }
 
-.data-table td p {
-    flex: 1;  /* Ensures the text takes up the remaining space */
-    margin: 0;
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 20px; /* Adjust header font size for smaller screens */
+    }
+
+    .search-container input[type="text"],
+    .search-container select {
+        width: 100%; /* Make input fields full width on smaller screens */
+        max-width: 100%;
+    }
+
+    .data-table {
+        font-size: 14px; /* Adjust font size for tables on smaller screens */
+    }
 }
