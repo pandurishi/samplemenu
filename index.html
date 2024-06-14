@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,64 +8,89 @@
 </head>
 <body>
     <header>
+        <p id="resto">Food Court</p>
         <nav>
-            <ul class="dropdown-menu">
-                <li><a href="#">Home</a></li>
-                
+           <ul class="dropdown-menu"> 
+                <li><a href="#"><h1 id="mainheading">Menu</h1></a></li>
             </ul>
         </nav>
         <div class="search-container">
             <input type="text" id="searchBar" onkeyup="filterTables()" placeholder="Search for captions.." list="searchSuggestions">
             <datalist id="searchSuggestions">
-                <option value="Table 1">
+                <option value="ICE CREAMS">
                 <option value="Table 2">
                 <option value="Table 3">
                 <option value="Table 4">
                 <option value="Table 5">
+                <option value="Table 6">
+                <option value="Table 7">
+                <option value="Table 8">
             </datalist>
             <select id="searchDropdown" onchange="filterTablesDropdown()">
                 <option value="">Select a table</option>
-                <option value="Table 1">Table 1</option>
+                <option value="ICE CREAMS">ICE CREAMS</option>
                 <option value="Table 2">Table 2</option>
                 <option value="Table 3">Table 3</option>
                 <option value="Table 4">Table 4</option>
                 <option value="Table 5">Table 5</option>
+                <option value="Table 6">Table 6</option>
+                <option value="Table 7">Table 7</option>
+                <option value="Table 8">Table 8</option>
             </select>
         </div>
     </header>
 
     <main>
         <table id="table1" class="data-table">
-            <caption>Table 1</caption>
-            <tr><th>Header 1</th>
-            <tr><td>Data 1</td>
+            <caption>ICE CREAMS</caption>
+            <tr><td><img src="C:\Users\pandu\OneDrive\testgallery\download.jfif" alt="Description Image"><p>Description of Dish</p></td></tr>
+             <tr><td>Data 1</td></tr>
         </table>
 
         <table id="table2" class="data-table">
             <caption>Table 2</caption>
-            <tr><th>Header 1</th>
-            <tr><td>Data 3</td>
+            <tr><td>Header 1</td></tr>
+            <tr><td>Data 3</td></tr>
         </table>
 
         <table id="table3" class="data-table">
             <caption>Table 3</caption>
-            <tr><th>Header 1</th>
-            <tr><td>Data 5</td>
+            <tr><th>Header 1</th></tr>
+            <tr><td>Data 5</td></tr>
         </table>
 
         <table id="table4" class="data-table">
             <caption>Table 4</caption>
-            <tr><th>Header 1</th>
-            <tr><td>Data 7</td>
+            <tr><th>Header 1</th></tr>
+            <tr><td>Data 7</td></tr>
         </table>
 
         <table id="table5" class="data-table">
             <caption>Table 5</caption>
-            <tr><th>Header 1</th>
-            <tr><td>Data 9</td>
+            <tr><th>Header 1</th></tr>
+            <tr><td>Data 9</td></tr>
+        </table>
+        
+        <table id="table6" class="data-table">
+            <caption>Table 6</caption>
+            <tr><th>Header 1</th></tr>
+            <tr><td>Data 9</td></tr>
+        </table>
+        
+        <table id="table7" class="data-table">
+            <caption>Table 7</caption>
+            <tr><th>Header 1</th></tr>
+            <tr><td>Data 9</td></tr>
+        </table>
+        
+        <table id="table8" class="data-table">
+            <caption>Table 8</caption>
+            <tr><th>Header 1</th></tr>
+            <tr><td>Data 9</td></tr>
         </table>
     </main>
 
     <script src="mech.js"></script>
 </body>
 </html>
+
