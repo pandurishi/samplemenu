@@ -1,78 +1,81 @@
-body {
+ body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-image: url('https://th.bing.com/th/id/R.5e9067aa3a7d597dd2612d2d0fe457d3?rik=IYLD6D%2fcUdpslQ&riu=http%3a%2f%2f1.bp.blogspot.com%2f-ceSQLaV8CmY%2fT_xJHpk98iI%2fAAAAAAAAAEM%2f5DGBvb_LFuA%2fs1600%2fsoftdrinkcanrendertest.png&ehk=ix1vYPZr3w9pjIxyrxLxRRpTJZnXUSKnNTSDULPk9CQ%3d&risl=&pid=ImgRaw&r=0');
+    padding: 15px 0;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 1500px 700px;
 }
 
-nav {
-    margin: 0;
-}
-
-ul.dropdown-menu {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-ul.dropdown-menu li {
+nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin: 0 10px;
 }
 
-ul.dropdown-menu li a {
-    color: white;
+nav ul li a {
     text-decoration: none;
+    color: #333;
 }
 
 .search-container {
-    position: relative;
+    margin-top: 20px;
 }
 
-#searchBar, #searchDropdown {
+.search-container input, .search-container select {
     padding: 5px;
-    margin: 5px 0;
-}
-
-main {
-    padding: 20px;
+    font-size: 16px;
 }
 
 .data-table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
-}
-
-.data-table, .data-table th, .data-table td {
-    border: 1px solid #ddd;
-    padding: 8px;
+    margin-top: 20px;
 }
 
 .data-table caption {
-    caption-side: top;
-    font-weight: bold;
-    text-align: left;
-    padding: 10px 0;
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
 
-@media screen and (max-width: 600px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    ul.dropdown-menu li {
-        display: block;
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
+.data-table th, .data-table td {
+    border: 1px solid #ddd;
+    padding: 1px;
+    text-align: left;
+    vertical-align: top;
+}
+
+#mainheading {
+    color: red;
+    font-size: 30px;
+}
+
+#resto {
+    color: rgb(255, 145, 0);
+    font-size: 150px;
+}
+
+.data-table td {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.data-table td img {
+    flex: 0 0 50%;  /* Ensures the image takes up exactly 50% of the cell's width */
+    height: auto;
+    margin-right: 20px; /* Space between image and text */
+}
+
+.data-table td p {
+    flex: 1;  /* Ensures the text takes up the remaining space */
+    margin: 0;
 }
