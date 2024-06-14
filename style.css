@@ -1,4 +1,4 @@
- /* General Reset and Base Styles */
+ /* Reset and Base Styles */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -12,10 +12,13 @@ body {
 
 /* Header Styles */
 header {
-    background-image: url('bg.png');
-    color: #fff;
+    background-image: url('bg.png'); /* Replace 'bg.png' with your actual image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     padding: 15px;
     text-align: center;
+    color: #fff;
 }
 
 header h1 {
